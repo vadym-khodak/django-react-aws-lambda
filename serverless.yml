@@ -68,3 +68,5 @@ package:
     - .serverless/**
     - node_modules/**
     - static/**
+    - client/**
+    - db.sqlite3

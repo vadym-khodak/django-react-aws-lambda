@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hello',
+    "rest_framework",
+    "users",
 ]
 
 MIDDLEWARE = [
@@ -129,7 +131,10 @@ USE_TZ = True
 STATIC_ROOT = str(ROOT_DIR / 'staticfiles')
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [str(ROOT_DIR / 'static')]
+STATICFILES_DIRS = [
+    str(ROOT_DIR / env('CLIENT_DIR', default='client/build')),
+    str(ROOT_DIR / 'static'),
+]
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
