@@ -142,4 +142,3 @@ STATICFILES_FINDERS = [
 MEDIA_ROOT = str(ROOT_DIR / 'media')
 MEDIA_URL = '/media/'
 ADMIN_URL = env('DJANGO_ADMIN_URL', default='admin/')
-# AUTH_USER_MODEL = 'users.User'
