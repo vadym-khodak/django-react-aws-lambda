@@ -16,7 +16,7 @@ custom:
     fileName: requirements.txt
   stage: ${env:STAGE}
   wsgi:
-    app: django_react_aws_lambda.wsgi.application
+    app: django_aws_lambda.wsgi.application
     packRequirements: false
   prune:
     automatic: true
